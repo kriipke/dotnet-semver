@@ -1,5 +1,6 @@
 name: Build and Version
-on:s
+
+on:
   push:
     branches:
       - main
@@ -30,7 +31,6 @@ jobs:
           git tag v$VERSION
           git push origin v$VERSION
 
-jobs:
   docker:
     runs-on: ubuntu-latest
     needs: versioning
