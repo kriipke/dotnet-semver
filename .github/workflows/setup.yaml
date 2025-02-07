@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0
 
       - name: Install GitVersion
-        uses: gittools/actions/gitversion/setup@v3.1.11
+        uses: gittools/actions/gitversion/setup@latest
         with:
           versionSpec: '6.0.x'
 
@@ -33,6 +33,6 @@ jobs:
           dotnet-version: '6.0.x'
   
       - name: Determine Version
-        uses: gittools/actions/gitversion/execute@v3.1.11
+        uses: gittools/actions/gitversion/execute@latest
         with:
           useConfigFile: true
